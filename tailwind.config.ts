@@ -16,6 +16,10 @@ const config: Config = {
       animation: {
         shine: "shine 5s linear infinite",
       },
+      backgroundImage: {
+        "custom-conic":
+          "conic-gradient(from -35deg at 84.41% 43.5%, #0F62FE 0deg, #093B98 360deg)",
+      },
     },
   },
   plugins: [],

@@ -4,6 +4,7 @@ import LandingFeatured from "./components/LandingFeatured";
 import LandingHero from "./components/LandingHero";
 import LandingNavbar from "./components/LandingNavbar";
 import LandingSkills from "./components/LandingSkills";
+import LandingWorks from "./components/LandingWorks";
 
 function LandingView() {
   return (
@@ -12,6 +13,7 @@ function LandingView() {
       <LandingHero />
       <LandingSkills />
       <LandingFeatured />
+      <LandingWorks />
     </div>
   );
 }
