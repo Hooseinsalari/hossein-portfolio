@@ -1,5 +1,4 @@
 import TiltedCard from "@/reactBits/TiltedCard/TiltedCard";
-import Image from "next/image";
 import React from "react";
 
 function LandingFeatured() {
@@ -9,7 +8,7 @@ function LandingFeatured() {
         Some of My Featured Works
       </h3>
       <div className="grid grid-cols-7 grid-rows-10 gap-4 h-[90vh] mt-10">
-        <div className="relative w-ful h-full col-start-1 col-end-5 row-start-1 row-end-6 rounded-3xl shadow-sm">
+        <div className="relative w-ful h-full col-start-1 col-end-5 row-start-1 row-end-6 rounded-3xl">
           <TiltedCard
             imageSrc="/media/landing/poi1.png"
             altText="Bank Card Design App"
@@ -18,8 +17,8 @@ function LandingFeatured() {
             containerWidth="100%"
             imageHeight="100%"
             imageWidth="100%"
-            rotateAmplitude={10}
-            scaleOnHover={1.01}
+            rotateAmplitude={8}
+            scaleOnHover={1}
             showMobileWarning={false}
             showTooltip={false}
             displayOverlayContent={true}
@@ -35,7 +34,7 @@ function LandingFeatured() {
             }
           />
         </div>
-        <div className="relative w-full h-full col-start-5 col-end-8 row-start-1 row-end-7 rounded-3xl shadow-sm">
+        <div className="relative w-full h-full col-start-5 col-end-8 row-start-1 row-end-7 rounded-3xl">
           <TiltedCard
             imageSrc="/media/landing/poi2.png"
             altText="Bank Card Design App"
@@ -44,8 +43,8 @@ function LandingFeatured() {
             containerWidth="100%"
             imageHeight="100%"
             imageWidth="100%"
-            rotateAmplitude={10}
-            scaleOnHover={1.01}
+            rotateAmplitude={8}
+            scaleOnHover={1}
             showMobileWarning={false}
             showTooltip={false}
             displayOverlayContent={true}
@@ -61,7 +60,7 @@ function LandingFeatured() {
             }
           />
         </div>
-        <div className="relative w-full h-full col-start-1 col-end-5 row-start-6 row-end-11 rounded-3xl shadow-sm">
+        <div className="relative w-full h-full col-start-1 col-end-5 row-start-6 row-end-11 rounded-3xl">
           <TiltedCard
             imageSrc="/media/landing/poi2.png"
             altText="Bank Card Design App"
@@ -70,8 +69,8 @@ function LandingFeatured() {
             containerWidth="100%"
             imageHeight="100%"
             imageWidth="100%"
-            rotateAmplitude={10}
-            scaleOnHover={1.01}
+            rotateAmplitude={8}
+            scaleOnHover={1}
             showMobileWarning={false}
             showTooltip={false}
             displayOverlayContent={true}
@@ -87,7 +86,7 @@ function LandingFeatured() {
             }
           />
         </div>
-        <div className="relative w-full h-full col-start-5 col-end-8 row-start-7 row-end-11 rounded-3xl shadow-sm">
+        <div className="relative w-full h-full col-start-5 col-end-8 row-start-7 row-end-11 rounded-3xl">
           <TiltedCard
             imageSrc="/media/landing/poi1.png"
             altText="Bank Card Design App"
@@ -96,8 +95,8 @@ function LandingFeatured() {
             containerWidth="100%"
             imageHeight="100%"
             imageWidth="100%"
-            rotateAmplitude={10}
-            scaleOnHover={1.01}
+            rotateAmplitude={8}
+            scaleOnHover={1}
             showMobileWarning={false}
             showTooltip={false}
             displayOverlayContent={true}
