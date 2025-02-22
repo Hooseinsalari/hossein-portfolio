@@ -17,7 +17,7 @@ function LandingHero() {
   //   }
 
   return (
-    <div className="text-start absolute top-[207px] bottom-8 right-16 left-16">
+    <div className="text-start mt-[80px] flex flex-col justify-end px-16">
       <h1 className="text-[#121619] text-2xl font-normal">
         Hey, I’m <span className="font-bold">Hossein</span>
       </h1>
@@ -47,7 +47,7 @@ function LandingHero() {
         </button>
 
         <h2 className="text-2xl font-normal text-[#21272A]">
-          Hi, I’m Hossein Salary, a frontend developer crafting beautiful <br />{" "}
+          Hi, I’m Hossein Salari, a frontend developer crafting beautiful <br />{" "}
           & performant web applications with modern technologies.
         </h2>
       </div>
