@@ -1,5 +1,6 @@
 "use client";
 
+import LandingFeatured from "./components/LandingFeatured";
 import LandingHero from "./components/LandingHero";
 import LandingNavbar from "./components/LandingNavbar";
 import LandingSkills from "./components/LandingSkills";
@@ -10,6 +11,7 @@ function LandingView() {
       <LandingNavbar />
       <LandingHero />
       <LandingSkills />
+      <LandingFeatured />
     </div>
   );
 }
