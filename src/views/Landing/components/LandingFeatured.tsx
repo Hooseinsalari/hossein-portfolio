@@ -7,8 +7,8 @@ function LandingFeatured() {
       <h3 className="text-[#21272A] text-2xl font-medium">
         Some of My Featured Works
       </h3>
-      <div className="grid grid-cols-7 grid-rows-10 gap-4 h-[90vh] mt-10">
-        <div className="relative w-ful h-full col-start-1 col-end-5 row-start-1 row-end-6 rounded-3xl">
+      <div className="grid grid-cols-5 grid-rows-9 gap-4 h-[90vh] mt-10">
+        <div className="relative w-ful h-full col-span-3 row-span-5 rounded-3xl">
           <TiltedCard
             imageSrc="/media/landing/poi1.png"
             altText="Bank Card Design App"
@@ -34,7 +34,7 @@ function LandingFeatured() {
             }
           />
         </div>
-        <div className="relative w-full h-full col-start-5 col-end-8 row-start-1 row-end-7 rounded-3xl">
+        <div className="relative w-full h-full col-span-3 row-span-4 col-start-1 row-start-6 rounded-3xl">
           <TiltedCard
             imageSrc="/media/landing/poi2.png"
             altText="Bank Card Design App"
@@ -60,7 +60,7 @@ function LandingFeatured() {
             }
           />
         </div>
-        <div className="relative w-full h-full col-start-1 col-end-5 row-start-6 row-end-11 rounded-3xl">
+        <div className="relative w-full h-full col-span-2 row-span-6 col-start-4 row-start-1 rounded-3xl">
           <TiltedCard
             imageSrc="/media/landing/poi2.png"
             altText="Bank Card Design App"
@@ -86,7 +86,7 @@ function LandingFeatured() {
             }
           />
         </div>
-        <div className="relative w-full h-full col-start-5 col-end-8 row-start-7 row-end-11 rounded-3xl">
+        <div className="relative w-full h-full col-span-2 row-span-3 col-start-4 row-start-7 rounded-3xl">
           <TiltedCard
             imageSrc="/media/landing/poi1.png"
             altText="Bank Card Design App"

@@ -28,7 +28,7 @@ function LandingWorks() {
         >
           <div
             onClick={() => setSelectedSection(0)}
-            className={clsx("p-16 cursor-pointer select-none", {
+            className={clsx("p-16 cursor-pointer select-none overflow-hidden", {
               "bg-custom-conic": selectedSection === 0,
               "bg-[#F2F4F8]": selectedSection !== 0,
             })}
@@ -52,13 +52,11 @@ function LandingWorks() {
               </h3>
             </div>
             <ul
-              className={clsx(
-                "transition-all duration-300 ease-in overflow-hidden",
-                {
-                  "max-h-0 pt-0": selectedSection !== 0,
-                  "max-h-[1000px] pt-6": selectedSection === 0,
-                }
-              )}
+              className={clsx("transition-all duration-300 overflow-hidden", {
+                "max-h-0 opacity-0 invisible": selectedSection !== 0,
+                "max-h-[1000px] opacity-100 visible mt-6":
+                  selectedSection === 0,
+              })}
             >
               {EXPERIENCES.map((it) => (
                 <li
@@ -84,7 +82,7 @@ function LandingWorks() {
           extraScale={1.2}
         >
           <div
-            className={clsx("p-16 cursor-pointer select-none", {
+            className={clsx("p-16 cursor-pointer select-none overflow-hidden", {
               "bg-custom-conic": selectedSection === 1,
               "bg-[#F2F4F8]": selectedSection !== 1,
             })}
@@ -109,13 +107,11 @@ function LandingWorks() {
               </h3>
             </div>
             <ul
-              className={clsx(
-                "transition-all duration-300 ease-in overflow-hidden",
-                {
-                  "max-h-0 pt-0": selectedSection !== 1,
-                  "max-h-[1000px] pt-6": selectedSection === 1,
-                }
-              )}
+              className={clsx("transition-all duration-300 overflow-hidden", {
+                "max-h-0 opacity-0 invisible": selectedSection !== 1,
+                "max-h-[1000px] opacity-100 visible mt-6":
+                  selectedSection === 1,
+              })}
             >
               {EXPERIENCES.map((it) => (
                 <li key={it} className="text-white text-lg font-normal">
