@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /*
 	jsrepo 1.39.3
 	Installed from https://reactbits.dev/ts/tailwind/

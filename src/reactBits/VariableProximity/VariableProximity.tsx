@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /*
 	jsrepo 1.39.2
 	Installed from https://reactbits.dev/ts/tailwind/
@@ -165,7 +166,7 @@ const VariableProximity = forwardRef<HTMLSpanElement, VariableProximityProps>((p
             className={className}
             {...restProps}
         >
-            {words.map((word, wordIndex) => (
+            {words.map((word: string, wordIndex: number) => (
                 <span
                     key={wordIndex}
                     className="inline-block whitespace-nowrap"
