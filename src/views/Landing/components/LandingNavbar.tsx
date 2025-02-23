@@ -1,5 +1,6 @@
 "use client";
 
+import Magnet from "@/reactBits/Magnet/Magnet";
 import { CallIcon, MenuIcon } from "../icons/Icons";
 
 function LandingNavbar() {
@@ -11,9 +12,11 @@ function LandingNavbar() {
       </h3>
 
       <div className="flex items-center justify-center gap-4">
-        <button className="border border-[#DDE1E6] rounded-full flex items-center justify-center gap-2 py-5 px-8 text-[#21272A] text-xl font-normal leading-6">
-          Let's Talk <span>{<CallIcon />}</span>
-        </button>
+        <Magnet padding={50} disabled={false} magnetStrength={14}>
+          <button className="border border-[#DDE1E6] rounded-full flex items-center justify-center gap-2 py-5 px-8 text-[#21272A] text-xl font-normal leading-6">
+            Let's Talk <span>{<CallIcon />}</span>
+          </button>
+        </Magnet>
         <button className="border border-[#DDE1E6] rounded-full p-5">
           {<MenuIcon />}
         </button>
