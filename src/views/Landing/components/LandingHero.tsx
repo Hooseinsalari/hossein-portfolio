@@ -1,9 +1,23 @@
-import ShinyText from "@/reactBits/ShinyText/ShinyText";
 import DecryptedText from "@/reactBits/DecryptedText/DecryptedText";
-import Link from "next/link";
+import GlitchText from "@/reactBits/GlitchText/GlitchText";
 import Ribbons from "@/reactBits/Ribbons/Ribbons";
+import ShinyText from "@/reactBits/ShinyText/ShinyText";
+import Link from "next/link";
+import { memo, useMemo } from "react";
 
 function LandingHero() {
+  const ribbonsProps = useMemo(
+    () => ({
+      baseThickness: 30,
+      colors: ["#0F62FE"],
+      speedMultiplier: 0.5,
+      maxAge: 500,
+      enableFade: true,
+      enableShaderEffect: true,
+    }),
+    []
+  );
+
   return (
     <div className="text-start h-[100vh] flex flex-col justify-end relative">
       <DecryptedText
@@ -20,7 +34,14 @@ function LandingHero() {
       <div className="text-9xl font-bold text-[#121619] mt-2 leading-tight px-16">
         <h1 className="flex items-center justify-start gap-8">
           Building
-          <span className="font-light">Seamless</span>
+          <GlitchText
+            speed={2}
+            enableShadows={false}
+            enableOnHover={false}
+            className="font-light mx-0"
+          >
+            Seamless
+          </GlitchText>
         </h1>
         <h1>Digital Experiences</h1>
       </div>
@@ -44,16 +65,9 @@ function LandingHero() {
         </h2>
       </div>
 
-      <Ribbons
-        baseThickness={30}
-        colors={["#0F62FE"]}
-        speedMultiplier={0.5}
-        maxAge={500}
-        enableFade={true}
-        enableShaderEffect={true}
-      />
+      <Ribbons {...ribbonsProps} />
     </div>
   );
 }
 
-export default LandingHero;
+export default memo(LandingHero);
