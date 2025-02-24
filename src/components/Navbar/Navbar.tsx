@@ -1,9 +1,9 @@
 "use client";
 
 import Magnet from "@/reactBits/Magnet/Magnet";
-import { CallIcon, MenuIcon } from "../icons/Icons";
+import { CallIcon, MenuIcon } from "@/views/Landing/icons/Icons";
 
-function LandingNavbar() {
+function Navbar() {
   return (
     <div className="flex items-center justify-between py-8 px-16">
       <h3 className="text-4xl font-bold">
@@ -25,4 +25,4 @@ function LandingNavbar() {
   );
 }
 
-export default LandingNavbar;
+export default Navbar;

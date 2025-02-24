@@ -9,7 +9,7 @@ function LandingWorks() {
   const [selectedSection, setSelectedSection] = useState(0);
 
   return (
-    <div className="p-16 bg-[#F9FBFF] mb-40">
+    <div className="p-16 bg-[#F9FBFF] mb-40" id="works">
       <div className="flex items-center justify-between text-[#21272A] mb-10">
         <h3 className="text-2xl font-medium">Where I’ve Worked</h3>
         <p className="text-xl font-normal ">
