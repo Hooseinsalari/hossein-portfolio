@@ -5,7 +5,7 @@ import { CallIcon, MenuIcon } from "@/views/Landing/icons/Icons";
 
 function Navbar() {
   return (
-    <div className="flex items-center justify-between py-8 px-16">
+    <div className="flex items-center justify-between py-8 px-16 absolute top-0 right-0 left-0">
       <h3 className="text-4xl font-bold">
         <span className="text-[#697077]">hos.</span>
         <span className="text-[#121619]">Salari</span>

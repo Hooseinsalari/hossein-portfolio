@@ -1,11 +1,11 @@
 import ShinyText from "@/reactBits/ShinyText/ShinyText";
 import DecryptedText from "@/reactBits/DecryptedText/DecryptedText";
-import MetaBalls from "@/reactBits/MetaBalls/MetaBalls";
 import Link from "next/link";
+import Ribbons from "@/reactBits/Ribbons/Ribbons";
 
 function LandingHero() {
   return (
-    <div className="text-start h-[80vh] flex flex-col justify-end px-16">
+    <div className="text-start h-[100vh] flex flex-col justify-end relative">
       <DecryptedText
         text="Hey, I’m Hossein"
         speed={60}
@@ -14,10 +14,10 @@ function LandingHero() {
         animateOn="hover"
         revealDirection="start"
         sequential={true}
-        parentClassName="text-2xl w-fit"
+        parentClassName="text-2xl w-fit px-16 z-10"
       />
 
-      <div className="text-9xl font-bold text-[#121619] mt-2 leading-tight">
+      <div className="text-9xl font-bold text-[#121619] mt-2 leading-tight px-16">
         <h1 className="flex items-center justify-start gap-8">
           Building
           <span className="font-light">Seamless</span>
@@ -25,10 +25,10 @@ function LandingHero() {
         <h1>Digital Experiences</h1>
       </div>
 
-      <div className="flex items-center justify-between w-full mt-10">
+      <div className="flex items-center justify-between w-full mt-10 px-16 pb-4">
         <Link
           href="#works"
-          className="bg-[#0F62FE] rounded-full flex items-center justify-center gap-2 text-xl font-normal text-white"
+          className="bg-[#0F62FE] rounded-full flex items-center justify-center gap-2 text-xl font-normal text-white overflow-hidden z-10"
         >
           <ShinyText
             text="View My Work"
@@ -44,14 +44,13 @@ function LandingHero() {
         </h2>
       </div>
 
-      <MetaBalls
-        color="#ffffff"
-        cursorBallSize={1}
-        ballCount={12}
-        animationSize={35}
-        enableMouseInteraction={false}
-        enableTransparency={true}
-        speed={0.3}
+      <Ribbons
+        baseThickness={30}
+        colors={["#0F62FE"]}
+        speedMultiplier={0.5}
+        maxAge={500}
+        enableFade={true}
+        enableShaderEffect={true}
       />
     </div>
   );
