@@ -36,7 +36,7 @@ const GlitchText: FC<GlitchTextProps> = ({
   };
 
   const baseClasses =
-    "text-[#121619] text-[clamp(2rem,10vw,8rem)] font-black relative mx-auto select-none cursor-pointer";
+    "text-[#121619] text-[clamp(2rem,10vw,8rem)] font-black relative select-none cursor-pointer";
 
   const pseudoClasses = !enableOnHover
     ? "after:content-[attr(data-text)] after:absolute after:top-0 after:left-[10px] after:text-white after:bg-[#00000029] after:overflow-hidden after:[clip-path:inset(0_0_0_0)] after:[text-shadow:var(--after-shadow)] after:animate-glitch-after " +
