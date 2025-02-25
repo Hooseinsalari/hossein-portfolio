@@ -93,7 +93,9 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
         return (
           <span
             key={index}
-            ref={(el) => (wordRefs.current[index] = el)}
+            ref={(el) => {
+              wordRefs.current[index] = el;
+            }}
             className="relative text-9xl font-bold text-[#121619]"
             style={
               {
