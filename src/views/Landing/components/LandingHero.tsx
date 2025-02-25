@@ -20,14 +20,14 @@ function LandingHero() {
 
       <div className="text-9xl font-bold text-[#121619] mt-6 leading-tight px-16">
         <TrueFocus
-          sentence="Building Seamless"
+          sentence="Develop Interactive"
           manualMode={true}
           blurAmount={5}
           borderColor="#0F62FE"
           animationDuration={1}
           pauseBetweenAnimations={1.2}
         />
-        <h1>Digital Experiences</h1>
+        <h1>Web Solutions</h1>
       </div>
 
       <div className="flex items-center justify-between w-full mt-10 px-16 pb-4">
