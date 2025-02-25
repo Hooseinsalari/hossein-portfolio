@@ -3,7 +3,7 @@ import { SKILLS_ITEMS } from "../constants/skills";
 
 function LandingSkills() {
   return (
-    <div className="mt-[160px] mb-[160px]">
+    <div className="pb-40 pt-10">
       <h3 className="text-[#21272A] font-medium text-2xl px-16">
         Tech Stack I Love Working With
       </h3>
