@@ -6,7 +6,7 @@ import { memo } from "react";
 
 function LandingHero() {
   return (
-    <div className="text-start flex flex-col relative pb-[120px] pt-[207px]">
+    <div className="text-start flex flex-col justify-end relative pb-40 pt-[207px] min-h-screen">
       <DecryptedText
         text="Hey, I’m Hossein"
         speed={60}
@@ -30,7 +30,7 @@ function LandingHero() {
         <h1>Web Solutions</h1>
       </div>
 
-      <div className="flex items-center justify-between w-full mt-10 px-16 pb-4">
+      <div className="flex items-center justify-between w-full mt-10 px-16">
         <Link
           href="#works"
           className="bg-[#0F62FE] rounded-full flex items-center justify-center gap-2 text-xl font-normal text-white overflow-hidden z-10"
